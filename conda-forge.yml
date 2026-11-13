@@ -1,5 +1,5 @@
 bot:
-  auto_merge: true
+  automerge: true
 conda_build_tool: rattler-build
 build_platform:
   linux_ppc64le: linux_64

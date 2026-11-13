@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "24.1.14"
+  version: "24.1.15"
 
 package:
   name: xwayland
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://www.x.org/releases/individual/xserver/xwayland-${{ version }}.tar.xz
-  sha256: 4eb6b98d678299a4b96138d886345b294130695760345ef84596225a8224078a
+  sha256: 7311b4bcda22cfc19cb99680eb1c35cfc1ea885981310639f0429fe2948c122e
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - ${{ stdlib('c') }}
     - meson
     - ninja
-    - pkg-config
+    - pkgconf
     # wayland-scanner has to run on the build machine. See build.sh.
     - wayland
   host:

@@ -23,7 +23,7 @@ requirements:
     - ${{ stdlib('c') }}
     - meson
     - ninja
-    - pkg-config
+    - pkgconf
     # wayland-scanner has to run on the build machine. See build.sh.
     - wayland
   host:
